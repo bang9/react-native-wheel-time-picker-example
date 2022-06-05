@@ -142,7 +142,7 @@ const TimePicker = ({ value, onChange, width, buttonHeight, visibleCount }) => {
     const hour = String(
       isPM(value) ? value.getHours() - 12 : value.getHours()
     ).padStart(2, '0');
-    const minute = String(value.getMinutes());
+    const minute = String(value.getMinutes()).padStart(2, '0');
 
     const matchIndex = [
       MERIDIEM_ITEMS.indexOf(meridiem),
