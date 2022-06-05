@@ -122,7 +122,6 @@ const TimePicker = ({ value, onChange, width, buttonHeight, visibleCount }) => {
         if (targetIdx === -1) return;
 
         const CENTER_POSITION = getCenterPositionFromIndex(targetIdx);
-        console.log(targetIdx, CENTER_POSITION);
         onScrollStop(CENTER_POSITION);
         onScrollStop.flush();
       },
